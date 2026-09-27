@@ -149,9 +149,7 @@ https://www.figma.com/proto/TPjGrSNY4iDw7rmIpM9phi/Sans-titre?node-id=2-10&t=6s4
 ---
 ## AI Assistant
 
-Orienta integrates the **OpenRouter API** to provide an AI-powered support assistant. The assistant uses the user's Holland Code, RIASEC scores, and Top-3 recommended domains as context to explain results, answer follow-up questions, and suggest career fields to explore.
-
-If the API is unavailable or rate-limited, the app automatically falls back to a local rule-based assistant.
+Orienta integrates the **OpenRouter API** to provide an AI-powered support assistant. The assistant uses the user's Holland Code, RIASEC scores, and Top-3 recommended domains as context to explain results.
 
 ## Technologies Used
 
