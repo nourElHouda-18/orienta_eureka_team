@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RIASEC 1-5 score chip: gradient when selected, glass otherwise. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_enabled="false">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="315"
+                android:endColor="#803A6CF4"
+                android:startColor="#8022CCD6" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="315"
+                android:endColor="@color/orienta_blue"
+                android:startColor="@color/orienta_teal" />
+            <stroke
+                android:width="1.5dp"
+                android:color="@color/orienta_glass_highlight" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/orienta_glass_fill_pressed" />
+            <stroke
+                android:width="@dimen/orienta_glass_stroke"
+                android:color="@color/orienta_teal" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/orienta_glass_fill" />
+            <stroke
+                android:width="@dimen/orienta_glass_stroke"
+                android:color="@color/orienta_glass_border" />
+        </shape>
+    </item>
+</selector>

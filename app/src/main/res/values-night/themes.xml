@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        Night mode uses exactly the same Orienta glass theme as the default
+        configuration (the design is dark by nature). Keeping this override
+        pointing at Theme.Orienta.Glass prevents the previous empty override
+        from resetting colors to the default Material purple.
+    -->
+    <style name="Base.Theme.OrientationApp" parent="Theme.Orienta.Glass" />
+</resources>

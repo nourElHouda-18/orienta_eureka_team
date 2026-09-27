@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_orienta_screen">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnBackResults"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_orienta_glass_circle"
+                android:contentDescription="Back"
+                android:padding="12dp"
+                android:src="@drawable/back_arrow_icon"
+                app:tint="@color/orienta_text_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="YOUR RIASEC PROFILE"
+                android:textAppearance="@style/TextAppearance.Orienta.Overline" />
+
+            <TextView
+                android:id="@+id/tvHollandCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:letterSpacing="0.12"
+                android:text="IAS"
+                android:textAppearance="@style/TextAppearance.Orienta.Display"
+                android:textColor="@color/orienta_teal_light" />
+
+            <TextView
+                android:id="@+id/tvProfileDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Investigative • Artistic • Social"
+                android:textAppearance="@style/TextAppearance.Orienta.Subtitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_orienta_glass_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIX DIMENSIONS"
+                    android:textAppearance="@style/TextAppearance.Orienta.Overline" />
+
+                <!-- R -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="R · Realistic" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                        <TextView android:id="@+id/tvScoreR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Label" android:textColor="@color/orienta_teal_light" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/progressScoreR" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="7dp" android:max="500" />
+                </LinearLayout>
+
+                <!-- I -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="I · Investigative" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                        <TextView android:id="@+id/tvScoreI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Label" android:textColor="@color/orienta_teal_light" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/progressScoreI" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="7dp" android:max="500" />
+                </LinearLayout>
+
+                <!-- A -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="A · Artistic" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                        <TextView android:id="@+id/tvScoreA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Label" android:textColor="@color/orienta_teal_light" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/progressScoreA" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="7dp" android:max="500" />
+                </LinearLayout>
+
+                <!-- S -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="S · Social" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                        <TextView android:id="@+id/tvScoreS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Label" android:textColor="@color/orienta_teal_light" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/progressScoreS" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="7dp" android:max="500" />
+                </LinearLayout>
+
+                <!-- E -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="E · Enterprising" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                        <TextView android:id="@+id/tvScoreE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Label" android:textColor="@color/orienta_teal_light" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/progressScoreE" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="7dp" android:max="500" />
+                </LinearLayout>
+
+                <!-- C -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="C · Conventional" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                        <TextView android:id="@+id/tvScoreC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Label" android:textColor="@color/orienta_teal_light" />
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/progressScoreC" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="7dp" android:max="500" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="TOP 3 COMPATIBLE DOMAINS"
+                android:textAppearance="@style/TextAppearance.Orienta.Overline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Generated by your trained RIASEC CatBoost model"
+                android:textAppearance="@style/TextAppearance.Orienta.Subtitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_orienta_glass_card_accent"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_orienta_rank_badge_primary" android:paddingStart="10dp" android:paddingTop="5dp" android:paddingEnd="10dp" android:paddingBottom="5dp" android:text="#1" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                    <TextView android:id="@+id/tvDomain1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:textAppearance="@style/TextAppearance.Orienta.CardTitle" />
+                    <TextView android:id="@+id/tvDomainProbability1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Title" android:textColor="@color/orienta_teal_light" />
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progressDomain1" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="12dp" android:max="1000" />
+                <TextView android:id="@+id/tvDomainDescription1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textAppearance="@style/TextAppearance.Orienta.Caption" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_orienta_glass_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_orienta_info_pill" android:paddingStart="10dp" android:paddingTop="5dp" android:paddingEnd="10dp" android:paddingBottom="5dp" android:text="#2" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                    <TextView android:id="@+id/tvDomain2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:textAppearance="@style/TextAppearance.Orienta.CardTitle" />
+                    <TextView android:id="@+id/tvDomainProbability2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Title" android:textColor="@color/orienta_teal_light" />
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progressDomain2" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="12dp" android:max="1000" />
+                <TextView android:id="@+id/tvDomainDescription2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textAppearance="@style/TextAppearance.Orienta.Caption" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_orienta_glass_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_orienta_info_pill" android:paddingStart="10dp" android:paddingTop="5dp" android:paddingEnd="10dp" android:paddingBottom="5dp" android:text="#3" android:textAppearance="@style/TextAppearance.Orienta.Label" />
+                    <TextView android:id="@+id/tvDomain3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:textAppearance="@style/TextAppearance.Orienta.CardTitle" />
+                    <TextView android:id="@+id/tvDomainProbability3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Orienta.Title" android:textColor="@color/orienta_teal_light" />
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progressDomain3" style="@style/Widget.Orienta.ProgressBar.Gradient" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="12dp" android:max="1000" />
+                <TextView android:id="@+id/tvDomainDescription3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textAppearance="@style/TextAppearance.Orienta.Caption" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_orienta_glass_card"
+                android:padding="16dp"
+                android:text="These results describe vocational interests and compatible areas to explore. They are not a diagnosis or a single correct career decision."
+                android:textAppearance="@style/TextAppearance.Orienta.Caption" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAskAssistant"
+                style="@style/Widget.Orienta.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/orienta_button_height"
+                android:layout_marginTop="22dp"
+                android:text="Ask Why ?" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRetake"
+                style="@style/Widget.Orienta.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/orienta_button_height"
+                android:layout_marginTop="12dp"
+                android:text="Retake RIASEC Test" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHome"
+                style="@style/Widget.Orienta.Button.Glass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/orienta_button_height"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:text="Back to Home" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

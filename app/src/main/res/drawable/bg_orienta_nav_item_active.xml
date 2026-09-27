@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Highlight behind the active bottom-navigation item. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="8dp"
+    android:insetLeft="6dp"
+    android:insetRight="6dp"
+    android:insetTop="8dp">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/orienta_glass_fill_strong" />
+        <stroke
+            android:width="@dimen/orienta_glass_stroke"
+            android:color="@color/orienta_glass_border_soft" />
+        <corners android:radius="@dimen/orienta_radius_input" />
+    </shape>
+</inset>

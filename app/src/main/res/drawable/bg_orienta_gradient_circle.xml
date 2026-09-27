@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teal -> blue accent circle for icons and the avatar. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:angle="315"
+        android:endColor="@color/orienta_blue"
+        android:startColor="@color/orienta_teal" />
+    <stroke
+        android:width="@dimen/orienta_glass_stroke"
+        android:color="@color/orienta_glass_highlight" />
+</shape>

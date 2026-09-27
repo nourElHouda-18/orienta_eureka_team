@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Highlighted glass card (e.g. predicted domain): teal-tinted sheen and brighter border. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/orienta_glass_shadow" />
+            <corners android:radius="@dimen/orienta_radius_card" />
+        </shape>
+    </item>
+    <item android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:endColor="#1A3A6CF4"
+                android:startColor="#4022CCD6" />
+            <stroke
+                android:width="@dimen/orienta_glass_stroke"
+                android:color="@color/orienta_glass_highlight" />
+            <corners android:radius="@dimen/orienta_radius_card" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Orienta glassmorphic theme.
+        Dark by design: it is shared by values/ and values-night/ so the app
+        looks identical whatever the system dark-mode setting, and Material
+        components never fall back to the default purple palette.
+    -->
+    <style name="Theme.Orienta.Glass" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Color scheme -->
+        <item name="colorPrimary">@color/orienta_teal</item>
+        <item name="colorOnPrimary">@color/orienta_bg_start</item>
+        <item name="colorPrimaryContainer">@color/orienta_blue_deep</item>
+        <item name="colorOnPrimaryContainer">@color/orienta_text_primary</item>
+        <item name="colorPrimaryDark">@color/orienta_bg_start</item>
+
+        <item name="colorSecondary">@color/orienta_blue</item>
+        <item name="colorOnSecondary">@color/orienta_text_primary</item>
+        <item name="colorSecondaryContainer">@color/orienta_surface_high</item>
+        <item name="colorOnSecondaryContainer">@color/orienta_text_primary</item>
+
+        <item name="colorTertiary">@color/orienta_teal_light</item>
+        <item name="colorOnTertiary">@color/orienta_bg_start</item>
+
+        <item name="colorError">@color/orienta_error</item>
+
+        <item name="android:colorBackground">@color/orienta_bg_deep</item>
+        <item name="colorSurface">@color/orienta_surface</item>
+        <item name="colorOnSurface">@color/orienta_text_primary</item>
+        <item name="colorSurfaceVariant">@color/orienta_surface_high</item>
+        <item name="colorOnSurfaceVariant">@color/orienta_text_secondary</item>
+        <item name="colorSurfaceContainerLowest">@color/orienta_bg_deep</item>
+        <item name="colorSurfaceContainerLow">@color/orienta_surface</item>
+        <item name="colorSurfaceContainer">@color/orienta_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/orienta_surface_high</item>
+        <item name="colorSurfaceContainerHighest">@color/orienta_surface_high</item>
+        <item name="colorOutline">@color/orienta_glass_border</item>
+        <item name="colorOutlineVariant">@color/orienta_glass_border_soft</item>
+
+        <item name="colorControlActivated">@color/orienta_teal</item>
+        <item name="colorControlNormal">@color/orienta_text_secondary</item>
+        <item name="colorControlHighlight">@color/orienta_glass_fill_strong</item>
+        <item name="android:colorAccent">@color/orienta_teal</item>
+
+        <!-- Window -->
+        <item name="android:windowBackground">@drawable/bg_orienta_screen</item>
+        <item name="android:statusBarColor">@color/orienta_bg_start</item>
+        <item name="android:navigationBarColor">@color/orienta_bg_deep</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Typography: Poppins everywhere -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Orienta.M3.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Orienta.M3.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Orienta.M3.TitleMedium</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Orienta.M3.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Orienta.M3.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Orienta.M3.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Orienta.M3.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Orienta.M3.LabelMedium</item>
+
+        <!-- Components -->
+        <item name="checkboxStyle">@style/Widget.Orienta.CheckBox</item>
+        <!-- TextInputLayouts created in Java (grade fields, reset-password dialog) -->
+        <item name="textInputStyle">@style/Widget.Orienta.TextInputLayout</item>
+        <!-- Default EditText without the underline background, so TextInputLayouts built in Java
+             (grade fields, reset-password dialog) can draw their glass outlined box. Plain EditTexts
+             in layouts set their own glass background explicitly. -->
+        <item name="editTextStyle">@style/Widget.Orienta.TextInputEditText</item>
+        <item name="spinnerStyle">@style/Widget.Orienta.Spinner</item>
+        <item name="android:spinnerStyle">@style/Widget.Orienta.Spinner</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.Orienta.AutoCompleteTextView</item>
+
+        <!-- Dialogs created in Java (AppCompat, Material and framework date picker) -->
+        <item name="alertDialogTheme">@style/ThemeOverlay.Orienta.AlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Orienta.MaterialAlertDialog</item>
+        <item name="android:datePickerDialogTheme">@style/ThemeOverlay.Orienta.DatePicker</item>
+    </style>
+
+    <!-- Base application theme (name kept: referenced by Theme.OrientationApp / the manifest). -->
+    <style name="Base.Theme.OrientationApp" parent="Theme.Orienta.Glass" />
+
+    <style name="Theme.OrientationApp" parent="Base.Theme.OrientationApp" />
+</resources>

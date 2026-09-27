@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Touch feedback for inactive navigation and drawer items. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/orienta_glass_fill_strong">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <corners android:radius="@dimen/orienta_radius_input" />
+        </shape>
+    </item>
+</ripple>

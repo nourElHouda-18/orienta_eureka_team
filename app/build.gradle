@@ -1,0 +1,65 @@
+import java.util.Properties
+
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { stream -> localProperties.load(stream) }
+}
+
+def escapeBuildConfig = { String value ->
+    value.replace("\\", "\\\\").replace('"', '\\"')
+}
+
+def openRouterApiKey = localProperties.getProperty("OPENROUTER_API_KEY", System.getenv("OPENROUTER_API_KEY") ?: "")
+def openRouterModel = localProperties.getProperty("OPENROUTER_MODEL", "openrouter/free")
+
+android {
+    namespace 'com.nourbouhafara.riasecapp'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.nourbouhafara.riasecapp"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Optional OpenRouter LLM demo configuration. Keep the API key in local.properties; never commit it.
+        buildConfigField "String", "OPENROUTER_API_KEY", "\"${escapeBuildConfig(openRouterApiKey)}\""
+        buildConfigField "String", "OPENROUTER_MODEL", "\"${escapeBuildConfig(openRouterModel)}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.26.0'
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

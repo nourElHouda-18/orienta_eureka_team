@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dropdown / spinner popup: near-opaque navy glass so list items stay readable. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#F5131F47" />
+    <stroke
+        android:width="@dimen/orienta_glass_stroke"
+        android:color="@color/orienta_glass_border" />
+    <corners android:radius="@dimen/orienta_radius_input" />
+    <padding
+        android:bottom="6dp"
+        android:top="6dp" />
+</shape>

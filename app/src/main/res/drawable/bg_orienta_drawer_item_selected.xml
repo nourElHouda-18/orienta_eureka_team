@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Selected drawer item: glass highlight with teal accent. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:endColor="@color/orienta_glass_fill_soft"
+        android:startColor="#3322CCD6" />
+    <stroke
+        android:width="@dimen/orienta_glass_stroke"
+        android:color="@color/orienta_glass_border" />
+    <corners android:radius="@dimen/orienta_radius_input" />
+</shape>

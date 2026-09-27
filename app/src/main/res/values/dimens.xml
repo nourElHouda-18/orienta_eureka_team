@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Orienta design system: corner radii -->
+    <dimen name="orienta_radius_card">24dp</dimen>
+    <dimen name="orienta_radius_card_small">18dp</dimen>
+    <dimen name="orienta_radius_input">16dp</dimen>
+    <dimen name="orienta_radius_pill">28dp</dimen>
+    <dimen name="orienta_radius_chip">14dp</dimen>
+
+    <!-- Spacing scale -->
+    <dimen name="orienta_space_xxs">4dp</dimen>
+    <dimen name="orienta_space_xs">8dp</dimen>
+    <dimen name="orienta_space_s">12dp</dimen>
+    <dimen name="orienta_space_m">16dp</dimen>
+    <dimen name="orienta_space_l">20dp</dimen>
+    <dimen name="orienta_space_xl">24dp</dimen>
+    <dimen name="orienta_space_xxl">32dp</dimen>
+    <dimen name="orienta_screen_padding">24dp</dimen>
+
+    <!-- Component sizes -->
+    <dimen name="orienta_button_height">56dp</dimen>
+    <dimen name="orienta_input_min_height">56dp</dimen>
+    <dimen name="orienta_icon_button">44dp</dimen>
+    <dimen name="orienta_icon_size">22dp</dimen>
+    <dimen name="orienta_avatar_size">56dp</dimen>
+    <dimen name="orienta_bottom_nav_height">72dp</dimen>
+    <dimen name="orienta_glass_stroke">1dp</dimen>
+
+    <!-- Elevation (glass surfaces stay flat; buttons get a soft glow) -->
+    <dimen name="orienta_elevation_none">0dp</dimen>
+    <dimen name="orienta_elevation_glow">10dp</dimen>
+    <dimen name="orienta_elevation_float">16dp</dimen>
+
+    <!-- Typography scale -->
+    <dimen name="orienta_text_display">34sp</dimen>
+    <dimen name="orienta_text_headline">26sp</dimen>
+    <dimen name="orienta_text_title">20sp</dimen>
+    <dimen name="orienta_text_subtitle">16sp</dimen>
+    <dimen name="orienta_text_body">15sp</dimen>
+    <dimen name="orienta_text_label">14sp</dimen>
+    <dimen name="orienta_text_caption">12sp</dimen>
+
+</resources>

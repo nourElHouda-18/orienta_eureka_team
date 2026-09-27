@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Empty-state illustration: history icon inside a glass circle (72dp). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="72dp"
+        android:height="72dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/orienta_glass_fill" />
+            <stroke
+                android:width="@dimen/orienta_glass_stroke"
+                android:color="@color/orienta_glass_border" />
+        </shape>
+    </item>
+    <item
+        android:width="32dp"
+        android:height="32dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/orienta_logo" />
+    </item>
+</layer-list>

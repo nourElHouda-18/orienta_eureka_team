@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Orienta screen background: black -> royal blue -> teal with two soft ambient glows. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="300"
+                android:centerColor="@color/orienta_bg_mid"
+                android:endColor="@color/orienta_bg_end"
+                android:startColor="@color/orienta_bg_start"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Teal glow, top end -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:centerX="0.95"
+                android:centerY="0.12"
+                android:endColor="@color/orienta_glow_none"
+                android:gradientRadius="75%p"
+                android:startColor="@color/orienta_glow_teal"
+                android:type="radial" />
+        </shape>
+    </item>
+
+    <!-- Blue glow, lower start -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:centerX="0.05"
+                android:centerY="0.72"
+                android:endColor="@color/orienta_glow_none"
+                android:gradientRadius="70%p"
+                android:startColor="@color/orienta_glow_blue"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>

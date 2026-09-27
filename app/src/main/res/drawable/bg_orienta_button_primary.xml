@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Primary action: teal -> blue gradient pill with ripple and disabled state. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/orienta_glass_highlight">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="0"
+                        android:endColor="#662448C8"
+                        android:startColor="#6622CCD6" />
+                    <corners android:radius="@dimen/orienta_radius_pill" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="0"
+                        android:endColor="@color/orienta_blue"
+                        android:startColor="@color/orienta_teal" />
+                    <stroke
+                        android:width="@dimen/orienta_glass_stroke"
+                        android:color="@color/orienta_glass_border" />
+                    <corners android:radius="@dimen/orienta_radius_pill" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

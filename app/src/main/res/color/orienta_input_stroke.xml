@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glass input border: teal when focused, subtle white otherwise. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/orienta_teal" android:state_focused="true" />
+    <item android:color="@color/orienta_glass_border_soft" android:state_enabled="false" />
+    <item android:color="@color/orienta_glass_border" />
+</selector>

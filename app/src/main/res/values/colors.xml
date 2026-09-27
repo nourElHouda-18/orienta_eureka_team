@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Main App Colors -->
+    <!-- Name kept (referenced from Java); now aliases the Orienta teal accent. -->
+    <color name="main_color">@color/orienta_teal</color>
+    <color name="main_color_dark">#1E7F99</color>
+    <color name="main_color_light">#5BC2DD</color>
+
+    <!-- Background Colors -->
+    <color name="background_main">#2FA4C3</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="background_soft">#F4FAFD</color>
+    <color name="background_input">#F8FBFD</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="white_soft">#CCFFFFFF</color>
+
+    <!-- Button Colors -->
+    <color name="button_main">#2FA4C3</color>
+    <color name="button_main_dark">#1E7F99</color>
+    <color name="button_secondary">#FFFFFF</color>
+
+    <!-- Border Colors -->
+    <color name="border_light">#D6E4EC</color>
+    <color name="divider">#E5E7EB</color>
+
+    <!-- Status Colors -->
+    <color name="success">#2E7D32</color>
+    <color name="warning">#ED6C02</color>
+    <color name="error">#D32F2F</color>
+
+    <!-- Extra UI Colors -->
+    <color name="shadow_color">#20000000</color>
+    <color name="card_blue_soft">#EAF4FA</color>
+
+    <!--
+        ============================================================
+        Orienta glassmorphic design system
+        Dark gradient (black -> royal blue -> teal), frosted glass
+        surfaces, teal -> blue primary accents.
+        The legacy colors above are kept for screens and Java code
+        that still reference them.
+        ============================================================
+    -->
+
+    <!-- Background gradient -->
+    <color name="orienta_bg_start">#03050C</color>
+    <color name="orienta_bg_mid">#0F2474</color>
+    <color name="orienta_bg_end">#0B8E9E</color>
+    <color name="orienta_bg_deep">#060A1A</color>
+
+    <!-- Ambient glows layered over the background -->
+    <color name="orienta_glow_teal">#5522D3D6</color>
+    <color name="orienta_glow_blue">#553A63F0</color>
+    <color name="orienta_glow_none">#00000000</color>
+
+    <!-- Accents -->
+    <color name="orienta_teal">#22CCD6</color>
+    <color name="orienta_teal_light">#6BE6EC</color>
+    <color name="orienta_blue">#3A6CF4</color>
+    <color name="orienta_blue_deep">#2448C8</color>
+
+    <!-- Glass surfaces -->
+    <color name="orienta_glass_fill">#1AFFFFFF</color>
+    <color name="orienta_glass_fill_soft">#0FFFFFFF</color>
+    <color name="orienta_glass_fill_strong">#26FFFFFF</color>
+    <color name="orienta_glass_fill_pressed">#33FFFFFF</color>
+    <color name="orienta_glass_border">#33FFFFFF</color>
+    <color name="orienta_glass_border_soft">#1FFFFFFF</color>
+    <color name="orienta_glass_highlight">#4DFFFFFF</color>
+    <color name="orienta_glass_shadow">#40000000</color>
+    <color name="orienta_divider">#26FFFFFF</color>
+
+    <!-- Solid surfaces (dialogs, popups, drawer) -->
+    <color name="orienta_surface">#101A3A</color>
+    <color name="orienta_surface_high">#16234A</color>
+    <color name="orienta_surface_dialog">#F0121C40</color>
+    <color name="orienta_scrim">#99000000</color>
+
+    <!-- Text -->
+    <color name="orienta_text_primary">#FFFFFF</color>
+    <color name="orienta_text_secondary">#B3FFFFFF</color>
+    <color name="orienta_text_tertiary">#80FFFFFF</color>
+    <color name="orienta_text_hint">#73FFFFFF</color>
+    <color name="orienta_text_disabled">#4DFFFFFF</color>
+    <color name="orienta_text_on_accent">#FFFFFF</color>
+
+    <!-- Status -->
+    <color name="orienta_error">#FF7A7A</color>
+    <color name="orienta_success">#4ADE9A</color>
+
+</resources>
