@@ -121,6 +121,11 @@ The final model achieved the following results on the test set:
 
 Because RIASEC measures vocational interests rather than determining one single correct career, the application focuses on **Top 3 recommendations** to support exploration and decision-making.
 
+**Why is the Macro F1 relatively low?**  
+Macro F1 evaluates the model as a strict single-label classifier, where only the first predicted domain is considered correct. However, RIASEC measures overlapping vocational interests rather than one unique “correct” career domain, so several domains can be reasonable for the same person.
+
+For this reason, Macro F1 does not fully reflect the intended use of the system. The application is designed as a recommender, and **Top-3 Accuracy (80.71%)** is more representative because it measures whether the user's actual domain appears among the three most compatible recommendations.
+
 ---
 
 ## Dataset
