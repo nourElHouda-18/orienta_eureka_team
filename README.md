@@ -196,7 +196,7 @@ Top 3 Compatible Domains
 1. Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/nourElHouda-18/orienta_eureka_team.git
 ```
 
 2. Open the project in **Android Studio**.
